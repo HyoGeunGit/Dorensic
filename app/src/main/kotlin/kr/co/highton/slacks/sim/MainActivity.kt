@@ -32,9 +32,9 @@ class MainActivity : BaseActivity() {
         tabLayout.setupWithViewPager(mViewPager)
 
         // set icons
-        tabLayout.getTabAt(0)!!.text = "1"
-        tabLayout.getTabAt(1)!!.text = "2"
-        tabLayout.getTabAt(2)!!.text = "3"
+        tabLayout.getTabAt(0)!!.text = "드론 위치"
+        tabLayout.getTabAt(1)!!.text = "드론 캠"
+        tabLayout.getTabAt(2)!!.text = "범죄자 명단"
 
         mViewPager!!.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
@@ -85,11 +85,11 @@ class MainActivity : BaseActivity() {
 
             return when (position) {
                 0 ->
-                    TipFragment()
+                    MapFragment()
                 1 ->
                     VideoFragment()
-
                 2 ->
+                    TipFragment()
 
                 else ->
                     null

@@ -7,16 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.github.chrisbanes.photoview.PhotoView
 
-/**
- * Created by Kinetic on 2018-06-02.
- */
 
-class VideoFragment : Fragment() {
+class MapFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
-        return inflater.inflate(R.layout.fragment_video, container, false)
-
+        return inflater.inflate(R.layout.fragment_map, container, false)
         val photoView = (R.id.map) as PhotoView
-        photoView.setImageResource(R.drawable.cam)
+        photoView.setImageResource(R.drawable.map)
+
     }
 }
